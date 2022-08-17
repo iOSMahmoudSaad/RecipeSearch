@@ -50,7 +50,9 @@ class RecipeSearchRouter: RecipeSearchRouterProtocol {
     }
     //MARK:- Alert
     func showAlert(with message: String )  {
+        if view != nil {
         self.view.showAlert(with: message)
+        }
     }
     
 }

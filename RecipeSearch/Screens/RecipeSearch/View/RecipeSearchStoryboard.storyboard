@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Recipes Search-->
+        <!--Recipe Search View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="RecipeSearchViewController" id="Y6W-OH-hqX" customClass="RecipeSearchViewController" customModule="RecipeSearch" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,7 +75,6 @@
                             <constraint firstItem="6rP-dg-LsW" firstAttribute="leading" secondItem="4M4-Gf-pyb" secondAttribute="leading" constant="4" id="o2P-MG-SeW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipes Search" id="0t0-9x-dfA"/>
                     <connections>
                         <outlet property="FilterCollectionView" destination="b3X-lP-fg3" id="oti-Xm-fKC"/>
                         <outlet property="loadingIndicator" destination="ywo-3o-vZS" id="nbe-c1-fNA"/>

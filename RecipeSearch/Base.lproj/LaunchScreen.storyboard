@@ -12,11 +12,24 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e1I-6U-ynw">
+                    <view key="view" contentMode="scaleToFill" id="Ko4-Ac-kuY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Fp-kA-5hz"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="xvN-6I-3Rw">
+                                <rect key="frame" x="37.666666666666657" y="258" width="300" height="296"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="OGI-lg-azs"/>
+                                    <constraint firstAttribute="height" constant="296" id="wmn-bi-LyY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zU8-iR-4eu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xvN-6I-3Rw" firstAttribute="centerY" secondItem="Ko4-Ac-kuY" secondAttribute="centerY" id="geG-N1-yfW"/>
+                            <constraint firstItem="xvN-6I-3Rw" firstAttribute="centerX" secondItem="Ko4-Ac-kuY" secondAttribute="centerX" id="mLe-qx-6Wg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,6 +38,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image" width="600" height="480"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

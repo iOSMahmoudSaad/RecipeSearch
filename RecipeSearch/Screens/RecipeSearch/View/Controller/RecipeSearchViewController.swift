@@ -49,10 +49,11 @@ class RecipeSearchViewController: UIViewController {
         recipesTableView.register(UINib(nibName: recipeTableViewCell, bundle: nil), forCellReuseIdentifier: recipeTableViewCell)
     }
     func searchControllerConfiguration() {
-        self.navigationItem.title = "Recipes Search"
+        title = "Recipes Search"
         searchController.searchBar.placeholder = "Search For Recipe"
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
+        searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         UIBarButtonItem.appearance(whenContainedInInstancesOf:[UISearchBar.self]).tintColor = #colorLiteral(red: 0.6841227412, green: 0.3237389922, blue: 0.8700659871, alpha: 1)
         navigationItem.hidesSearchBarWhenScrolling = false
