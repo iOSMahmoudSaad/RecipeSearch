@@ -44,9 +44,9 @@ class RecipeSearchRouter: RecipeSearchRouterProtocol {
    // MARK:- navigation
     func showRecipeDetails(of recipe: RecipeData)
     {
-//        let recipeDetailsRouter = RecipeDetailsRouter()
-//            .createModule(with: recipe)
-//        self.navigationController.pushViewController(recipeDetailsRouter, animated: true)
+        let recipeDetailsRouter = RecipeDetailsRouter()
+            .createModule(with: recipe)
+        self.navigationController.pushViewController(recipeDetailsRouter, animated: true)
     }
     //MARK:- Alert
     func showAlert(with message: String )  {

@@ -39,6 +39,12 @@
 		8208B82D28AC313C002E1E97 /* SearchHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208B82C28AC313C002E1E97 /* SearchHistoryTableViewController.swift */; };
 		8208B83028AC317A002E1E97 /* SearchHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8208B82E28AC317A002E1E97 /* SearchHistoryTableViewCell.swift */; };
 		8208B83128AC317A002E1E97 /* SearchHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8208B82F28AC317A002E1E97 /* SearchHistoryTableViewCell.xib */; };
+		827B907D28ACFCF60037C979 /* RecipeDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B907C28ACFCF60037C979 /* RecipeDetailsPresenter.swift */; };
+		827B907F28ACFD100037C979 /* RecipeDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B907E28ACFD100037C979 /* RecipeDetailsRouter.swift */; };
+		827B908128ACFD200037C979 /* RecipeDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B908028ACFD200037C979 /* RecipeDetailsProtocols.swift */; };
+		827B908328ACFD990037C979 /* RecipeDetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827B908228ACFD990037C979 /* RecipeDetailsStoryboard.storyboard */; };
+		827B908828ACFE020037C979 /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B908728ACFE020037C979 /* RecipeDetailsViewController.swift */; };
+		827B908A28AD00800037C979 /*  RecipeIngredientsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B908928AD00800037C979 /*  RecipeIngredientsTableView.swift */; };
 		829FC4EA28ABDFF400181333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829FC4E928ABDFF400181333 /* AppDelegate.swift */; };
 		829FC4EC28ABDFF400181333 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829FC4EB28ABDFF400181333 /* SceneDelegate.swift */; };
 		829FC4EE28ABDFF400181333 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829FC4ED28ABDFF400181333 /* ViewController.swift */; };
@@ -104,6 +110,12 @@
 		8208B82C28AC313C002E1E97 /* SearchHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryTableViewController.swift; sourceTree = "<group>"; };
 		8208B82E28AC317A002E1E97 /* SearchHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		8208B82F28AC317A002E1E97 /* SearchHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		827B907C28ACFCF60037C979 /* RecipeDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsPresenter.swift; sourceTree = "<group>"; };
+		827B907E28ACFD100037C979 /* RecipeDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsRouter.swift; sourceTree = "<group>"; };
+		827B908028ACFD200037C979 /* RecipeDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsProtocols.swift; sourceTree = "<group>"; };
+		827B908228ACFD990037C979 /* RecipeDetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeDetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		827B908728ACFE020037C979 /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
+		827B908928AD00800037C979 /*  RecipeIngredientsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " RecipeIngredientsTableView.swift"; sourceTree = "<group>"; };
 		829FC4E628ABDFF400181333 /* RecipeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829FC4E928ABDFF400181333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		829FC4EB28ABDFF400181333 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +215,7 @@
 			children = (
 				8208B80228AC2625002E1E97 /* RecipeSearch */,
 				8208B80328AC26C0002E1E97 /* SearchHistory */,
+				827B907728ACFC9D0037C979 /* RecipeDetails */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -396,6 +409,67 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		827B907728ACFC9D0037C979 /* RecipeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				827B907828ACFCB20037C979 /* View */,
+				827B907928ACFCB90037C979 /* Presenter */,
+				827B907A28ACFCC20037C979 /* Router */,
+				827B907B28ACFCC90037C979 /* Protocol */,
+			);
+			path = RecipeDetails;
+			sourceTree = "<group>";
+		};
+		827B907828ACFCB20037C979 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				827B908528ACFDD40037C979 /* View */,
+				827B908628ACFDE30037C979 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		827B907928ACFCB90037C979 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				827B907C28ACFCF60037C979 /* RecipeDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		827B907A28ACFCC20037C979 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				827B907E28ACFD100037C979 /* RecipeDetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		827B907B28ACFCC90037C979 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				827B908028ACFD200037C979 /* RecipeDetailsProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		827B908528ACFDD40037C979 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				827B908228ACFD990037C979 /* RecipeDetailsStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		827B908628ACFDE30037C979 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				827B908728ACFE020037C979 /* RecipeDetailsViewController.swift */,
+				827B908928AD00800037C979 /*  RecipeIngredientsTableView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		829FC4DD28ABDFF400181333 = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +661,7 @@
 			files = (
 				829FC4F628ABDFF600181333 /* LaunchScreen.storyboard in Resources */,
 				8208B80C28AC27C3002E1E97 /* RecipeSearchStoryboard.storyboard in Resources */,
+				827B908328ACFD990037C979 /* RecipeDetailsStoryboard.storyboard in Resources */,
 				8208B83128AC317A002E1E97 /* SearchHistoryTableViewCell.xib in Resources */,
 				8208B81428AC296B002E1E97 /* RecipeCell.xib in Resources */,
 				8208B81828AC2992002E1E97 /* FilterCell.xib in Resources */,
@@ -721,6 +796,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8208B7F628AC24DF002E1E97 /* RecipeSearchInteractor.swift in Sources */,
+				827B908A28AD00800037C979 /*  RecipeIngredientsTableView.swift in Sources */,
 				8208B7DF28AC20CD002E1E97 /* String.swift in Sources */,
 				8208B81A28AC2D03002E1E97 /* FilterCollectionView.swift in Sources */,
 				829FC4EE28ABDFF400181333 /* ViewController.swift in Sources */,
@@ -736,18 +812,22 @@
 				8208B82228AC2FBB002E1E97 /* SearchHistoryPresenter.swift in Sources */,
 				8208B82028AC2FAC002E1E97 /* SearchHistoryInteractor.swift in Sources */,
 				8208B80128AC25EB002E1E97 /* RecipeSearchWorker.swift in Sources */,
+				827B907F28ACFD100037C979 /* RecipeDetailsRouter.swift in Sources */,
 				8208B81E28AC2E6B002E1E97 /* SearchControllDelegate.swift in Sources */,
 				8208B7FF28AC2577002E1E97 /* RecipeSearchProtocols.swift in Sources */,
 				8208B82628AC2FE3002E1E97 /* SearchHistoryProtocols.swift in Sources */,
+				827B907D28ACFCF60037C979 /* RecipeDetailsPresenter.swift in Sources */,
 				8208B7FB28AC254E002E1E97 /* Recipe.swift in Sources */,
 				8208B80E28AC27E6002E1E97 /* RecipeSearchViewController.swift in Sources */,
 				8208B81C28AC2E2B002E1E97 /* RecipesTableView.swift in Sources */,
 				8208B82428AC2FCC002E1E97 /* SearchHistoryRouter.swift in Sources */,
 				8208B7FD28AC255F002E1E97 /* RecipeSearchRouter.swift in Sources */,
+				827B908128ACFD200037C979 /* RecipeDetailsProtocols.swift in Sources */,
 				8208B81328AC296B002E1E97 /* RecipeCell.swift in Sources */,
 				8208B7E928AC231E002E1E97 /* SearchHistroryDelegate.swift in Sources */,
 				8208B7E228AC2118002E1E97 /* Api.swift in Sources */,
 				8208B7E628AC212F002E1E97 /* Filter.swift in Sources */,
+				827B908828ACFE020037C979 /* RecipeDetailsViewController.swift in Sources */,
 				829FC4EC28ABDFF400181333 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

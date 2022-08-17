@@ -49,8 +49,7 @@ class RecipeSearchViewController: UIViewController {
         recipesTableView.register(UINib(nibName: recipeTableViewCell, bundle: nil), forCellReuseIdentifier: recipeTableViewCell)
     }
     func searchControllerConfiguration() {
-      self.navigationItem.title = "Recipes Search"
-        
+        self.navigationItem.title = "Recipes Search"
         searchController.searchBar.placeholder = "Search For Recipe"
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
